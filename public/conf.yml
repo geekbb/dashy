@@ -1,47 +1,281 @@
----
-# Page meta info, like heading, footer text and nav links
-pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
-  navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: dashy-docs
+  layout: auto
+  iconSize: small
+  language: cn
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: true
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: google
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
+  auth:
+    enableGuestAccess: false
+    users:
+      - user: geekbb
+        hash: b2e0dded17e834d10814ef700052be250dc0d9bf6849bf98b47741a12c5e58d7
+        type: admin
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+pageInfo:
+  title: Geek
+  description: ''
+  navLinks:
+    - title: Google
+      path: https://www.google.com/
+      target: newtab
+    - title: Documentation
+      path: https://dashy.to/docs
+      target: newtab
+  footerText: ''
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: 常用
+    icon: fas fa-star
+    items:
+      - title: Notion
+        description: ''
+        icon: si-notion
+        url: https://www.notion.so/
+        target: newtab
+        id: 0_54112_notion
+      - title: 电子书
+        description: ''
+        icon: https://icon.horse/icon/zlib.zu1k.com
+        url: https://zlib.zu1k.com/
+        id: 1_54112_
+      - title: 黑苹果
+        description: ''
+        icon: favicon
+        url: https://bbs.pcbeta.com/forum-570-1.html
+        provider: Dashy.to
+        id: 2_54112_
+      - title: ahhhhfs
+        description: ''
+        icon: https://icon.horse/icon/www.ahhhhfs.com
+        url: https://www.ahhhhfs.com/
+        id: 3_54112_ahhhhfs
+      - title: Btnull
+        description: ''
+        icon: https://icon.horse/icon/www.btnull.org
+        url: https://www.btnull.org/
+        id: 4_54112_btnull
+      - title: 哔嘀影视
+        description: ''
+        icon: si-googleplay
+        url: https://www.bdys01.com/
+        id: 5_54112_
+      - title: 键盘测试
+        icon: favicon
+        url: https://www.zfrontier.com/lab/keyboardTester/
+        statusCheck: true
+        id: 6_54112_
+      - title: Google翻译
+        icon: favicon
+        url: https://translate.google.com/?hl=zh-CN&tab=TT
+        statusCheck: true
+        id: 7_54112_google
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: NAS本地
+    icon: fas fa-server
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: unraid
+        description: unraid本地
+        icon: si-unraid
+        url: http://192.168.2.100/Dashboard
+        statusCheck: false
+        id: 0_48958_unraid
+      - title: Openwrt
+        description: openwrt本地
+        icon: si-openwrt
+        url: http://op/
+        statusCheck: false
+        id: 1_48958_openwrt
+      - title: 集客AC
+        icon: fas fa-network-wired
+        url: http://192.168.2.3/
+        statusCheck: false
+        id: 2_48958_ac
+      - title: qbittorrent
+        description: qbittorrent本地
+        icon: si-qt
+        url: http://192.168.2.100:8080/
+        statusCheck: false
+        id: 3_48958_qbittorrent
+      - title: EmbyServer
+        icon: si-emby
+        url: http://192.168.2.100:8096/
+        statusCheck: false
+        id: 4_48958_embyserver
+      - title: Home Assistant
+        icon: si-homeassistant
+        url: http://192.168.2.120:8123/
+        statusCheck: false
+        id: 5_48958_homeassistant
+  - name: Game游戏
+    icon: si-youtubegaming
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: xxxxx520
+        icon: si-nintendoswitch
+        url: https://xxxxx520.com/
+        id: 0_53697_xxxxx
+      - title: NS模拟器资源
+        icon: fas fa-gamepad
+        url: http://nsemu.ysepan.com/
+        id: 1_53697_ns
+      - title: romslab
+        icon: https://icon.horse/icon/nsw2u.com
+        url: https://romslab.com/
+        id: 2_53697_romslab
+      - title: nsw2u
+        icon: https://icon.horse/icon/nsw2u.com
+        url: https://nsw2u.com/
+        id: 3_53697_nswu
+  - name: VPS
+    icon: si-serverless
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: VPS监控
+        icon: https://icon.horse/icon/vps.198406.xyz
+        url: https://vps.198406.xyz/
+        id: 0_249_vps
+      - title: 198406-Nginx
+        icon: https://icon.horse/icon/nginx.198406.xyz
+        url: https://nginx.198406.xyz/login
+        statusCheckAllowInsecure: true
+        id: 1_249_nginx
+      - title: geekbb-Nginx
+        icon: https://icon.horse/icon/nginx.198406.xyz
+        url: https://nginx.geekbb.ml/
+        statusCheckAllowInsecure: true
+        id: 2_249_geekbbnginx
+      - title: 青龙
+        icon: https://icon.horse/icon/qinglong.198406.xyz
+        url: https://qinglong.198406.xyz/
+        statusCheckAllowInsecure: true
+        statusCheck: true
+        id: 3_249_
+      - title: 东京ping
+        icon: fas fa-globe
+        url: http://ojp3ping.geekbb.ml/smokeping/?target=Other.CU.CU-GUI
+        id: 4_249_ping
+      - title: 首尔ping
+        icon: fas fa-globe
+        url: http://okr4ping.geekbb.ml/smokeping/?target=Other.CU.CU-GUI
+        id: 5_249_ping
+  - name: NAS外网
+    icon: fas fa-server
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Unraid
+        icon: si-unraid
+        url: http://geek.unraid.ml/
+        statusCheck: false
+        id: 0_55625_unraid
+      - title: Qflood
+        icon: si-qt
+        url: https://qflood.unraid.ml/
+        statusCheckAllowInsecure: false
+        statusCheck: false
+        id: 1_55625_qflood
+      - title: Filerun
+        icon: https://icon.horse/icon/filerun.198406.xyz
+        url: https://filerun.198406.xyz/
+        statusCheck: false
+        id: 2_55625_filerun
+      - title: OpenWrt
+        icon: si-openwrt
+        url: https://op.unraid.ml/
+        statusCheck: false
+        id: 3_55625_openwrt
+      - title: Alist网盘
+        icon: favicon
+        url: https://dy.geekbb.ml/
+        id: 4_55625_alist
+      - title: Onedrive
+        icon: favicon
+        url: https://onedrive.live.com/
+        id: 5_55625_onedrive
+  - name: 资源
+    icon: fas fa-inbox
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: 电子节目单
+        icon: favicon
+        url: https://epg.112114.xyz/
+        id: 0_64468_
+      - title: 网盘资源搜索
+        icon: favicon
+        url: https://pansearch.long2ice.io/
+        id: 1_64468_
+      - title: 阿里网盘搜索
+        icon: favicon
+        url: https://zhaoziyuan.la/
+        id: 2_64468_
+      - title: 肥羊直播源汇总
+        icon: favicon
+        url: https://zb.v1.mk/
+        id: 3_64468_
+      - title: Banana的资源站
+        icon: favicon
+        url: https://alist.advanced360.top/
+        id: 4_64468_banana
+pages:
+  - name: 导航
+    path: ''
